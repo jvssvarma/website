@@ -1,7 +1,8 @@
 
-#Planning our application
+#Planning my application
 
-	1. What am I building? We are building a personal site. A place where one can blog, share projects of work and have people contact us.
+	1. What am I building? 
+	   I am building a personal site. A place where one can blog, share projects of work and have people contact us.
 
 	2. Who am I building it for? We are building it for ourselves, but also the community. Sharing what we learn and help others learn. Show our work to potential employers.
 
