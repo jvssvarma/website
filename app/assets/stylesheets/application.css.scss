@@ -96,27 +96,31 @@ hr {
 }
 
 #main_navigation {
-	padding: 2.5em 5%;
+	padding: 1.5em 5%;
 	border-bottom: 1px solid $border;
+	background-color: #004e66;
 	.name {
 		font-weight: 700;
-		font-size: .8em;
+		font-size: 1em;
 		letter-spacing: 4px;
 		text-transform: uppercase;
 		border: 2px solid $border;
 		padding: 1rem;
 		text-decoration: none;
-		color: $dark;
+		color: #e1eef6;
 		float: left;
 	}
 	nav {
 		float: right;
 		padding-top: 1.5rem;
+		&:hover {
+			color: #FFFFF2;
+		}
 		a {
-			color: $dark;
+			color: #e1eef6;
 			text-decoration: none;
 			margin: 0 1rem;
-			font-size: 1rem;
+			font-size: 1.5rem;
 		}
 	}
 }

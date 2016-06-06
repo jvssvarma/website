@@ -1,22 +1,22 @@
 <div class="wrapper wrapper_padding clearfix">
 	<div class="about homepage_content">
-		<h2>Hey!</h3>
-		<h1>I am Santosh Varma</h1>
-		<hr>
+		<h2 align="center">Hey! I am</h2>
+		<h1 align="center">JAMPANA VARMA</h1>
 		<h2>I'm a developer &amp; part designer currently living in Silicon Valley.</h2>
 
 		<h3>You can find me speaking in 140 characters on Twitter, posting pictures on instagram, and sharing some code on Github.</h3>
 	</div>
-	<div class="col-1 homepage_content">
+	<hr align="center">
+	<div class="center col-1 posts_content">
 		<h2>Stuff I've Written</h2>
-		<hr>
+		<hr align="center">
 		<% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>
 			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
 		<% end %>
 		
 	</div>
-	<div class="col-2 homepage_content">
+	<div class="center col-1 projects_content">
 		<h2>Stuff I've Built</h2>
 		<hr>
 		<% @projects.each do |project| %>
