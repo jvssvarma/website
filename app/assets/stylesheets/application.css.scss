@@ -12,7 +12,7 @@ $border: #E9E9E9;
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background-image: url(pattern.jpg);
+	background-image: url(http://s3.amazonaws.com/codevarma/pattern.jpg);
 }
 
 .wrapper {
@@ -201,6 +201,7 @@ input[type="submit"], .button {
 	margin: 4em 0 0 0;
 	text-align: center;
 }
+
 
 @import 'welcome';
 @import 'posts_projects';
