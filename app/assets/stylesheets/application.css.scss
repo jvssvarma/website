@@ -12,7 +12,7 @@ $border: #E9E9E9;
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background-image: url(http://s3.amazonaws.com/codevarma/pattern.jpg);
+	background-image: url(http://s3.amazonaws.com/codevarma/ggb&w.jpg);
 }
 
 .wrapper {
@@ -127,10 +127,11 @@ hr {
 }
 
 #page_title {
+	color: #D4294F;
 	text-align: center;
-	border-bottom: 1px solid $border;
-	padding: 3em 0;
-	font-size: 1rem;
+	border-bottom: 3px solid $border;
+	padding: 0.2em;
+	font-size: 2rem;
 	text-transform: uppercase;
 }
 

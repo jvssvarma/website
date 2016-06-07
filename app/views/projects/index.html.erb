@@ -5,6 +5,9 @@
 		<div class="post">
 			<p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
 			<h2><a href="#"><%= link_to project.title, project %></a></h2>
+			<div class='project-body'>
+				<%= truncate(project.description, length: 150) %>
+			</div>
 			<hr>
 		</div>
 	<% end %>
