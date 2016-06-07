@@ -3,6 +3,7 @@
 }
 
 .col-1 {
+	background-color: #004e66;
 	width: 45%;
 	padding: 0 5% 0 2.5%;
 }
@@ -11,6 +12,21 @@
 	width: 27.5%;
 	padding: 0 2.5%;
 }
+
+.round-image-50 {
+    border-radius: 300px;
+    -moz-border-radius: 300px;
+    -webkit-border-radius: 300px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% };
+    margin-left: auto;
+    margin-right: auto
+}
+
+
 
 .homepage_content {
 	h2 {
@@ -32,7 +48,7 @@
 	.date {
 		font-size: .85em;
 		margin-bottom: 2em;
-		color: $light;
+		color: #dark;
 	}
 	p {
 		margin: 0 0 .75em 0;
@@ -60,7 +76,7 @@
 	.date {
 		font-size: .85em;
 		margin-bottom: 2em;
-		color: $light;
+		color: #34314c;
 	}
 	p {
 		margin: 0 0 .75em 0;
@@ -89,7 +105,7 @@
 	.date {
 		font-size: .85em;
 		margin-bottom: 2em;
-		color: $light;
+		color: #34314c;
 	}
 	p {
 		margin: 0 0 .75em 0;

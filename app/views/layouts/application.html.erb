@@ -8,7 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body bgcolor="#efffe9">
+<body>
 	<header id="main_navigation" class="clearfix">
 		<%= link_to "Code Varma", root_path, class: "name" %>
 		<nav>
@@ -20,7 +20,6 @@
 			<% end %>
 		</nav>
 	</header>
-
 	<% if notice %>
 		<p class="notice"><%= notice %></p>
 	<% elsif alert %>
@@ -36,6 +35,5 @@
 			<a href="http://github.com/jvssvarma" target="_blank"><i class="fa fa-github"></i></a>
 		</nav>
 	</footer>
-
 </body>
 </html>

@@ -12,6 +12,7 @@ $border: #E9E9E9;
 
 body {
 	font-family: 'Raleway', sans-serif;
+	background-image: url(pattern.jpg);
 }
 
 .wrapper {
@@ -95,9 +96,9 @@ hr {
 	margin: 2rem 0;
 }
 
+
 #main_navigation {
-	padding: 1.5em 5%;
-	border-bottom: 1px solid $border;
+	padding: 1em 5%;
 	background-color: #004e66;
 	.name {
 		font-weight: 700;
@@ -112,12 +113,12 @@ hr {
 	}
 	nav {
 		float: right;
-		padding-top: 1.5rem;
+		padding-top: 1rem;
 		&:hover {
-			color: #FFFFF2;
+			color: #000000;
 		}
 		a {
-			color: #e1eef6;
+			color: #FFFFF3;
 			text-decoration: none;
 			margin: 0 1rem;
 			font-size: 1.5rem;
@@ -152,6 +153,13 @@ hr {
 			}
 		}
 	}
+}
+
+#round-image {
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	height: 18px;
+	width: 18px;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
