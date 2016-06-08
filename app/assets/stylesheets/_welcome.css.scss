@@ -3,9 +3,10 @@
 }
 
 .col-1 {
+	background-image: url(http://s3.amazonaws.com/codevarma/asfalt-light.png);
 	background-color: #004e66;
 	width: 50%;
-	padding: 0 5% 0 2.5%;
+	padding: 0 2.5%;
 }
 
 .col-2, .col-3 {
@@ -29,14 +30,19 @@
 
 
 .homepage_content {
+	h1 {
+		color: #E71D36;
+	}
 	h2 {
+
 		font-size: 1.1rem;
 		text-transform: uppercase;
 	}
 	h3 {
+
 		font-size: 1.35em;
 		font-weight: 100;
-		margin-bottom: .5em;
+		
 	}
 	a {
 		text-decoration: none;
@@ -115,7 +121,7 @@
 .about {
 	padding: 0 7.5% 0 0;
 	a {
-		color: $highlight;
+		color: #FFFFFF;
 		font-weight: 700;
 		text-decoration: none;
 	}

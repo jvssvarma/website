@@ -1,6 +1,6 @@
 @import 'normalize';
 
-$dark: #424652;
+$dark: #000000;
 $white: #FFFFFF;
 $light: #9a9da4;
 $highlight: #8bc6db;
@@ -12,7 +12,9 @@ $border: #E9E9E9;
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background-image: url(http://s3.amazonaws.com/codevarma/ggb&w.jpg);
+	background-color: #FFFFF3;
+	background-image: url(http://s3.amazonaws.com/codevarma/paper.jpg);
+
 }
 
 .wrapper {
@@ -99,7 +101,7 @@ hr {
 
 #main_navigation {
 	padding: 1em 5%;
-	background-color: #004e66;
+	background-color: #011638;
 	.name {
 		font-weight: 700;
 		font-size: 1em;
@@ -155,7 +157,6 @@ hr {
 		}
 	}
 }
-
 #round-image {
 	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -197,7 +198,6 @@ input[type="submit"], .button {
 	text-decoration: none;
 	padding: 1em 2em;
 }
-
 .button_wrapper {
 	margin: 4em 0 0 0;
 	text-align: center;
@@ -207,4 +207,3 @@ input[type="submit"], .button {
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
-

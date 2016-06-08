@@ -12,9 +12,9 @@
 			text-transform: uppercase;
 			a {
 				text-decoration: none;
-				color: $dark;
+				color: #011638;
 				&:hover {
-					color: $highlight;
+					color: #000000;
 				}
 			}
 		}
@@ -28,11 +28,12 @@
 	header {
 		text-align: center;
 		.date {
-			font-size: .9em;
-			color: $light;
+			font-size: 1em;
+			color: #011638;
 			margin: 0;
 		}
 		h1 {
+			color: #D4294F;
 			margin: 0;
 		}
 	}
@@ -48,14 +49,14 @@
 		margin: 0;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: $dark;
+		color: #011638;
 		font-size: .8em;
 	}
 	i {
-		color: $dark;
+		color: #011638;
 		padding: 1em 1.5em;
 		&:hover {
-			color: $highlight;
+			color: #000000;
 			cursor: pointer;
 		}
 	}
@@ -81,7 +82,7 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: .9em;
-	color: $dark;
+	color: #011638;
 }
 
 .pagination:before,
@@ -107,7 +108,7 @@
 		font-weight: 700;
 		font-size: .7em;
 		font-style: normal;
-		color: $dark;
+		color: #011638;
 		&:hover {
 			background: $highlight;
 			color: $white;
