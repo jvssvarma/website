@@ -97,9 +97,6 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
-    passenger (5.0.28)
-      rack
-      rake (>= 0.8.1)
     pg (0.18.4)
     posix-spawn (0.3.11)
     pygments.rb (0.6.3)
@@ -187,8 +184,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mail_form (~> 1.5, >= 1.5.1)
-  passenger (~> 5.0, >= 5.0.28)
-  pg (~> 0.15)
+  pg
   pygments.rb (~> 0.6.3)
   rails (= 4.2.5)
   redcarpet (~> 3.3, >= 3.3.4)
@@ -201,4 +197,4 @@ DEPENDENCIES
   will_paginate (~> 3.1)
 
 BUNDLED WITH
-   1.11.0
+   1.11.2
