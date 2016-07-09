@@ -11,10 +11,26 @@ $border: #E9E9E9;
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
-	background-color: #FFFFF3;
-	background-image: url(http://s3.amazonaws.com/codevarma/paper.jpg);
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #FFFFFF;
 
+}
+
+.wrapper_wide {
+  width: 100%;
+  margin: 0 0 0 34%;
+}
+
+.wrapper_skinny {
+  width: 90%;
+  margin: 1rem 5% 23rem 9%;
+	text-align: center;
+}
+
+.wrapper_pic {
+  width: 90%;
+  margin: 13em 5% 1rem 9%;
+	text-align: center;
 }
 
 .wrapper {
