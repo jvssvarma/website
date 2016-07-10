@@ -11,6 +11,7 @@ $border: #E9E9E9;
 }
 
 body {
+	background-image: url(http://s3.amazonaws.com/codevarma/paper.jpg);
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #FFFFFF;
 
@@ -23,13 +24,13 @@ body {
 
 .wrapper_skinny {
   width: 90%;
-  margin: 1rem 5% 23rem 9%;
+  margin: 1rem 5% 10rem 9%;
 	text-align: center;
 }
 
 .wrapper_pic {
   width: 90%;
-  margin: 13em 5% 1rem 9%;
+  margin: 8em 5% 1rem 9%;
 	text-align: center;
 }
 
@@ -66,6 +67,31 @@ body {
   text-align: center;
   padding: 1em 0;
   border-bottom: 1px solid #E9E9E9;
+}
+
+.green {
+  font-weight: 700;
+  color: #56A902;
+}
+
+.pink {
+  font-weight: 700;
+  color: #fe4365;
+}
+
+.red {
+  font-weight: 700;
+  color: #E71D36;
+}
+
+.blue {
+  font-weight: 700;
+  color: #30A9DE;
+}
+
+.black {
+  font-weight: 700;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -116,8 +142,9 @@ hr {
 
 
 #main_navigation {
-	padding: 1em 5%;
-	background-color: #011638;
+	padding: 0.5em 5%;
+	background-color: $white;
+	text-align: center;
 	.name {
 		font-weight: 700;
 		font-size: 1em;
@@ -126,20 +153,20 @@ hr {
 		border: 2px solid $border;
 		padding: 1rem;
 		text-decoration: none;
-		color: #e1eef6;
+		color: $dark;
 		float: left;
 	}
 	nav {
 		float: right;
-		padding-top: 1rem;
+		padding-top: 0.5rem;
 		&:hover {
 			color: #000000;
 		}
 		a {
-			color: #FFFFF3;
+			color: $dark;
 			text-decoration: none;
 			margin: 0 1rem;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 	}
 }
@@ -147,9 +174,8 @@ hr {
 #page_title {
 	color: #D4294F;
 	text-align: center;
-	border-bottom: 3px solid $border;
 	padding: 0.2em;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 
@@ -173,6 +199,7 @@ hr {
 		}
 	}
 }
+
 #round-image {
 	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
