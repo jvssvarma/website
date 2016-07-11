@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@posts = Post.all.order("updated_at desc").paginate(page: params[:page], per_page: 5)
+		@posts = Post.all.order("updated_at desc").paginate(page: params[:page], per_page: 9)
 	end
 
 	def new
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:title, :content, :slug)
+		params.require(:post).permit(:title, :content, :slug, :color)
 	end
 
 	def find_post

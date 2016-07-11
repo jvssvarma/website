@@ -69,27 +69,27 @@ body {
   border-bottom: 1px solid #E9E9E9;
 }
 
-.green {
+.green_index {
   font-weight: 700;
   color: #56A902;
 }
 
-.pink {
+.pink_index {
   font-weight: 700;
   color: #fe4365;
 }
 
-.red {
+.red_index {
   font-weight: 700;
   color: #E71D36;
 }
 
-.blue {
+.blue_index {
   font-weight: 700;
   color: #30A9DE;
 }
 
-.black {
+.black_index {
   font-weight: 700;
   color: #000000;
 }
@@ -180,7 +180,7 @@ hr {
 }
 
 #main_footer {
-	padding: 2.5em 5%;
+	margin: 3rem;
 	border-top: 1px solid $border;
 	.copyright {
 		float: left;

@@ -1,13 +1,106 @@
 <h1 id="page_title">Stuff I've Written</h1>
 
-<div id="posts_wrapper" class="skinny_wrapper">
-	<% @posts.each do |post| %>
-		<div class="post">
-			<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-			<h2><a href="#"><%= link_to post.title, post %></a></h2>
-			<hr>
-		</div>
+<% @posts.each do |post| %>
+	<% if post.color == "red" %>
+		<a href="<% post %>">
+		  <div class="post_color red">
+		    <div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+		      <div class="post_info">
+		        <p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+		      </div>
+		    </div>
+		  </div>
+		</a>
+	<% elsif post.color == "green" %>
+		<a href="<% post %>">
+			<div class="post_color green">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "purple" %>
+		<a href="<% post %>">
+			<div class="post_color purple">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "lime_green" %>
+		<a href="<% post %>">
+			<div class="post_color lime_green">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "pink" %>
+		<a href="<% post %>">
+			<div class="post_color pink">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "orange" %>
+		<a href="<% post %>">
+			<div class="post_color orange">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "yellow" %>
+		<a href="<% post %>">
+			<div class="post_color yellow">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% elsif post.color == "blue" %>
+		<a href="<% post %>">
+			<div class="post_color blue">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
+	<% else %>
+		<a href="<% post %>">
+			<div class="post_color white">
+				<div class="inner">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<div class="post_info">
+						<p class="date"><i class="fa fa-calendar-o"></i><%= post.created_at.strftime('%A, %B %d') %></p>
+					</div>
+				</div>
+			</div>
+		</a>
 	<% end %>
-</div>
+<% end %>
 
 <%= will_paginate @posts %>

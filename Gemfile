@@ -16,7 +16,6 @@ gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'aws-sdk', '~> 2'
-gem 'font-awesome-rails'
 
 
 
