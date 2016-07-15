@@ -9,7 +9,9 @@
 		<%= markdown @article.content %>
 	</div>
 	<div>
+		<% if @article.image.present? %>
 			<%= image_tag @article.image.url(:medium) %>
+		<% end %>
 	</div>
 	<% if user_signed_in? %>
 	<div id="admin_links">
