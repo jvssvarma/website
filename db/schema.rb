@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160711005910) do
+ActiveRecord::Schema.define(version: 20160715092432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "slug"
+  end
+
+  add_index "articles", ["slug"], name: "index_articles_on_slug", unique: true, using: :btree
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -32,10 +46,14 @@ ActiveRecord::Schema.define(version: 20160711005910) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "slug"
     t.string   "color"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true, using: :btree
@@ -45,9 +63,14 @@ ActiveRecord::Schema.define(version: 20160711005910) do
     t.text     "description"
     t.string   "github"
     t.string   "link"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "slug"
+    t.string   "image"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true, using: :btree

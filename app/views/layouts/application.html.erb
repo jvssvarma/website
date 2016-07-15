@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jampana Varma | Developer, Designer and Film Editor</title>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<title>Jampana Varma | Coder, Developer &amp; Designer</title>
+	<link rel="icon" href="https://s3-us-west-1.amazonaws.com/codevarma-v1-pro/logo55.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/application.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main_navigation" class="clearfix">
+    <div class="logo">
+      <%= link_to (image_tag "https://s3-us-west-1.amazonaws.com/codevarma-v1-pro/logo55.png"), root_path %>
+    </div>
+		<nav>
+      <a href="/"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+      <a href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+			<a href="/posts"><i class="fa fa-clipboard" aria-hidden="true"></i> Blogs</a>
+			<a href="/articles"><i class="fa fa-book" aria-hidden="true"></i> Articles</a>
+      <a href="/projects"><i class="fa fa-desktop" aria-hidden="true"></i> Projects</a>
+			<a href="/contacts/new"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+			<% if user_signed_in? %>
+			    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+			<% end %>
+		</nav>
+	</header>
 	<% if notice %>
 		<p class="notice"><%= notice %></p>
 	<% elsif alert %>
 		<p class="alert"><%= alert %></p>
 	<% end %>
 
-	<% unless current_page?(root_path) %>
-		<%= render 'layouts/header' %>
-	<% end %>
-
 	<%= yield %>
 
-	<footer id="main_footer">
-		<p class="copyright">&copy;2016 Santosh Varma</p>
+	<div id="footer">
+		<p class="copyright">&copy;2016 Jampana Varma</p>
 		<nav>
 			<a href="http://twitter.com/sunny_santosh" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/santoshcreative" target="_blank"><i class="fa fa-instagram"></i></a>
 			<a href="http://github.com/jvssvarma" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="http://linkedin.com/in/jampanavarma" target="_blank"><i class="fa fa-linkedin"></i></a>
 		</nav>
-	</footer>
+	</div>
 </body>
 </html>

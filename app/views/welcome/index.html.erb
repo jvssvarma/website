@@ -1,37 +1,13 @@
-<div id="background">
-	<header class="clearfix">
-		<div class="wrapper_wide">
-			<nav>
-				<ul>
-					<li><%= link_to "Projects", projects_path, class: "welcome_bar" %></li>
-					<li><%= link_to "Blog Posts", posts_path %></li>
-					<li><%= link_to "Say Hello!", new_contact_path %></li>
-			    <% if user_signed_in? %>
-			        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-			    <% end %>
-				</ul>
-			</nav>
-	</header>
-</div>
-
 <div class="wrapper wrapper_padding clearfix">
 	<div class="about homepage_content">
-		<div class="wrapper_pic">
-			<div class='round-image-50'>
-				<%= image_tag("http://s3.amazonaws.com/codevarma/varma.jpg") %>
-			</div>
-		</div>
-		<div class="wrapper_skinny">
-			<p class="welcome_message">Hey! I'm Jampana Varma.<br> I <span class="green_index">code stuff,</span> <span class="pink_index">design stuff,</span>
-				<span class="red_index">edit videos</span> &amp; <span class="blue_index">occasionally write</span>.</p>
-			<p class="welcome_message">Finding the unity between Development &amp; Design is what fuels my passion and drives me to creating better apps. Please feel free to look through my work and if you are interested in working with me don't hesitate to get in touch!
-You can find me speaking in 140 characters on Twitter, posting pictures on instagram and sharing some code on Github.</p>
-		</div>
+		<h2>Welcome!</h2>
+    <h1 wrapper_head>I'm Jampana Varma<br><span class="blue">Coder</span>, <span class="green">Web Devloper</span>,
+      <span class="half_red">Amateur Designer</span> &amp; <span class="orange">Editor</span> from San Jose, CA</b></h1>
 	</div>
 	<br>
 	<br>
 	<div class="center col-1 posts_content">
-		<h2>Stuff I've Written</h2>
+		<h2>Stuff I want to Share</h2>
 		<hr align="center">
 		<% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -40,11 +16,11 @@ You can find me speaking in 140 characters on Twitter, posting pictures on insta
 
 	</div>
 	<div class="center col-1 projects_content">
-		<h2>Stuff I've Built</h2>
+		<h2>Stuff I've Written</h2>
 		<hr>
-		<% @projects.each do |project| %>
-			<h3><a href="#"><%= link_to project.title, project %></a></h3>
-			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+		<% @articles.each do |article| %>
+			<h3><a href="#"><%= link_to article.title, article %></a></h3>
+			<p class="date"><%= article.created_at.strftime("%A, %b %d") %></p>
 		<% end %>
 	</div>
 </div>

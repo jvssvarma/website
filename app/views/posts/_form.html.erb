@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for @post, html: { multipart: true } do |f| %>
   <% if @post.errors.any? %>
      <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
      <ul>
@@ -16,17 +16,17 @@
   <br>
 
 
-  <%= f.label :content, "Write your article here" %><br>
+  <%= f.label :content, "Write your post here" %><br>
   <%= f.text_area :content %>
 
   <br>
   <br>
 
-  <%= f.label :color, "Index post background. [red, green, purple, lime_green, pink, orange, yellow, blue, white]" %><br>
-  <%= f.text_field :color %>
+  <%= f.label :image %><br>
+	<%= f.file_field :image %>
 
-  <br>
-  <br>
+	<br>
+	<br>
 
   <%= f.submit %>
 

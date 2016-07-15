@@ -1,7 +1,6 @@
-class Project < ActiveRecord::Base
-	validates_presence_of :title, :description
+class Article < ActiveRecord::Base
 
-	has_attached_file :image, styles: { medium: "800x600>", small: "350x250>", thumb: "150x150" },
+  has_attached_file :image, styles: { medium: "800x600>", small: "350x250>", thumb: "150x150" },
 		default_url: "/images/:style/missing.png",
 		:url  => ":s3_domain_url",
     :path => "public/images/:id/:style_:basename.:extension",
@@ -16,6 +15,6 @@ class Project < ActiveRecord::Base
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
-	extend FriendlyId
+  extend FriendlyId
 	friendly_id :title, use: :slugged
 end

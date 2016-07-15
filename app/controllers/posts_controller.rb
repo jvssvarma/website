@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@posts = Post.all.order("updated_at desc").paginate(page: params[:page], per_page: 9)
+		@posts = Post.all.order("updated_at desc").paginate(page: params[:page], per_page: 5)
 	end
 
 	def new
@@ -14,9 +14,9 @@ class PostsController < ApplicationController
 		@post = Post.new post_params
 
 		if @post.save
-			redirect_to @post, notice: "Article posted successfully!"
+			redirect_to @post, notice: "Posted successfully!"
 		else
-			render 'new', notice: "Oh no, Unable to post your article."
+			render 'new', notice: "Oh no, Something went wrong."
 		end
 	end
 
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
 	def update
 		if @post.update post_params
-			redirect_to @post, notice: "Article is updated!"
+			redirect_to @post, notice: "Post is updated!"
 		else
 			render 'edit'
 		end
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:title, :content, :slug, :color)
+		params.require(:post).permit(:title, :content, :slug, :image)
 	end
 
 	def find_post

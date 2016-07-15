@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@projects = Project.all.order("updated_at desc").paginate(page: params[:page], per_page: 9)
+		@projects = Project.all.order("created_at desc").paginate(page: params[:page], per_page: 9)
 	end
 
 	def new
@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
 	private
 
 	def project_params
-		params.require(:project).permit(:title, :description, :github, :link)
+		params.require(:project).permit(:title, :description, :github, :link, :image)
 	end
 
 	def find_project

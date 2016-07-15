@@ -1,15 +1,5 @@
-$red:         #E48482;
-$green:       #73BFA2;
-$purple:      #848FC1;
-$lime_green:  #BEEA75;
-$pink:        #E4899E;
-$orange:      #EBA870;
-$yellow:      #E0DB79;
-$blue:        #8DABCF;
-$white:       #FFFFFF;
-
 #posts_wrapper {
-	padding: 2em 0;
+	padding: 3em 0;
 	.post {
 		text-align: center;
 		.date {
@@ -18,7 +8,7 @@ $white:       #FFFFFF;
 		}
 		h2 {
 			margin: 0;
-			font-size: 1.3em;
+			font-size: 2em;
 			text-transform: uppercase;
 			a {
 				text-decoration: none;
@@ -29,140 +19,10 @@ $white:       #FFFFFF;
 			}
 		}
 		hr {
-			margin: 2em auto;
+			margin: 3em auto;
 		}
 	}
 }
-
-.post_color {
-  width: 33%;
-	margin: 0.15rem 0.15rem;
-  float: left;
-  min-height: 400px;
-  color: #FFFFFF;
-  display: table;
-  .inner {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 15%;
-  }
-  .title {
-    font-size: 1.75em;
-		text-decoration: none;
-  }
-	.post_info {
-    .date {
-      display: inline;
-      font-size: 1.1em;
-    }
-    .date {
-      margin-right: 1em;
-    }
-  }
-  transition: background .4s ease-in-out;
-}
-.red {
-  background: #E48482;
-	.post_info {
-    .date {
-      color: #A25F5E;
-    }
-  }
-  &:hover {
-    background: darken(#E48482, 10%);
-  }
-}
-
-.green {
-  background: $green;
-  .post_info {
-    .date {
-      color: #51967B;
-    }
-  }
-  &:hover {
-    background: darken($green, 10%);
-  }
-}
-.purple {
-  background: $purple;
-  .post_info {
-    .date {
-      color: #5A648F;
-    }
-  }
-  &:hover {
-    background: darken($purple, 10%);
-  }
-}
-.lime_green {
-  background: $lime_green;
-  .post_info {
-    .date {
-      color: #8EB44E;
-    }
-  }
-  &:hover {
-    background: darken($lime_green, 10%);
-  }
-}
-.pink {
-  background: $pink;
-  .post_info {
-    .date {
-      color: #CD5E78;
-    }
-  }
-  &:hover {
-    background: darken($pink, 10%);
-  }
-}
-.orange {
-  background: $orange;
-  .post_info {
-    .date {
-      color: #B87F4E;
-    }
-  }
-  &:hover {
-    background: darken($orange, 10%);
-  }
-}
-.yellow {
-  background: $yellow;
-  .post_info {
-    .date {
-      color: #A4A04C;
-    }
-  }
-  &:hover {
-    background: darken($yellow, 10%);
-  }
-}
-.blue {
-  background: $blue;
-  .post_info {
-    .date {
-      color: #6582A5;
-    }
-  }
-  &:hover {
-    background: darken($blue, 10%);
-  }
-}
-
-.white {
-  background: #FFFFFF;
-	.post_info {
-    .date {
-      color: #000000;
-    }
-  }
-  &:hover {
-    background: darken(#E48482, 10%);
-  }
-}
-
 
 #post_show_content {
 	header {
@@ -265,95 +125,4 @@ $white:       #FFFFFF;
 			background: $white;
 		}
 	}
-}
-
-#projects {
-	.project {
-		background: #F8F9FA;
-		width: 30%;
-		float: left;
-		margin: 1rem 1.5%;
-		border: 1px solid #E4E4E4;
-		border-radius: 0.3rem;
-		.project_image {
-			height: 200px;
-			overflow: hidden;
-			img {
-				width: 100%;
-				border-radius: .3rem .3rem 0 0;
-			}
-		}
-    .project_content {
-			h2 {
-				margin: 0;
-				font-weight: 100;
-				padding: 1rem 5%;
-				border-bottom: 1px solid #E4E4E4;
-				font-size: 1.25rem;
-				a {
-					text-decoration: none;
-					color: #333233;
-					&:hover {
-						color: #50A7C7;
-					}
-				}
-			}
-			.data {
-				padding: .75rem 5%;
-				color: #969696;
-				.username, .buttons {
-					margin: 0;
-					font-size: .8rem;
-				}
-				.username {
-					float: left;
-				}
-				.buttons {
-					float: right;
-					span {
-						margin-left: .5rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-  .post {
-    width: 33.3333%;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .post {
-    .inner {
-      padding: 0 7.5%;
-    }
-    .title {
-      font-size: 1.5em;
-			text-decoration: none;
-    }
-    .post_info {
-      .date {
-        font-size: 1em;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .post {
-    width: 100%;
-    min-height: 300px;
-    .title {
-      font-size: 1.375em;
-			text-decoration: none;
-    }
-    .post_info {
-      .date {
-        font-size: .9em;
-      }
-    }
-  }
 }

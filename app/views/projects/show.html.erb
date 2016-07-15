@@ -7,6 +7,9 @@
 
 	<div id="content" class="post_show_content">
 		<%= markdown @project.description %>
+		<div>
+        <%= image_tag @project.image.url(:medium) %>
+		</div>
 
 		<div class="button_wrapper">
 			<% if @project.github.empty? == false %>
@@ -35,7 +38,7 @@
         <!-- Google Plus -->
         <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 	</div>
-	
+
 
 	<hr>
 </div>

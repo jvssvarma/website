@@ -1,0 +1,17 @@
+<h1 id="page_title">Stuff I've Written</h1>
+
+<div id="projects">
+	<% @articles.each do |article| %>
+		<div class="project">
+			<p class="date"><%= article.created_at.strftime('%A, %B %d') %></p>
+			<div class="project_image">
+				<%= link_to (image_tag article.image.url(:small)), article %>
+			</div>
+			<div class="project_content">
+				<h2><a href="#"><%= link_to article.title, article %></a></h2>
+			</div>
+		</div>
+	<% end %>
+</div>
+
+<%= will_paginate @articles %>

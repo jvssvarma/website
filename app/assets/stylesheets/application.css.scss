@@ -11,27 +11,30 @@ $border: #E9E9E9;
 }
 
 body {
-	background-image: url(http://s3.amazonaws.com/codevarma/paper.jpg);
-	font-family: 'Ubuntu', sans-serif;
-	background-color: #FFFFFF;
-
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FFFFF3;
 }
 
-.wrapper_wide {
-  width: 100%;
-  margin: 0 0 0 34%;
+.logo {
+  margin: 0;
+  height: 10px;
+  width: 10px;
 }
 
-.wrapper_skinny {
-  width: 90%;
-  margin: 1rem 5% 10rem 9%;
-	text-align: center;
+.green {
+  color: #2ecc71;
 }
 
-.wrapper_pic {
-  width: 90%;
-  margin: 8em 5% 1rem 9%;
-	text-align: center;
+.blue {
+  color: #3498db;
+}
+
+.half_red {
+  color: #e74c3c;
+}
+
+.orange {
+  color: #ff5f2e;
 }
 
 .wrapper {
@@ -43,6 +46,13 @@ body {
 	width: 80%;
 	max-width: 760px;
 	margin: 0 auto;
+}
+
+.wrapper_head {
+  width: 50%;
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 3rem;
 }
 
 .wrapper_padding {
@@ -67,31 +77,6 @@ body {
   text-align: center;
   padding: 1em 0;
   border-bottom: 1px solid #E9E9E9;
-}
-
-.green_index {
-  font-weight: 700;
-  color: #56A902;
-}
-
-.pink_index {
-  font-weight: 700;
-  color: #fe4365;
-}
-
-.red_index {
-  font-weight: 700;
-  color: #E71D36;
-}
-
-.blue_index {
-  font-weight: 700;
-  color: #30A9DE;
-}
-
-.black_index {
-  font-weight: 700;
-  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -142,9 +127,7 @@ hr {
 
 
 #main_navigation {
-	padding: 0.5em 5%;
-	background-color: $white;
-	text-align: center;
+	padding: 1em 5%;
 	.name {
 		font-weight: 700;
 		font-size: 1em;
@@ -153,34 +136,37 @@ hr {
 		border: 2px solid $border;
 		padding: 1rem;
 		text-decoration: none;
-		color: $dark;
+		color: #e1eef6;
 		float: left;
 	}
 	nav {
 		float: right;
-		padding-top: 0.5rem;
+		padding-top: 1rem;
 		&:hover {
 			color: #000000;
 		}
 		a {
-			color: $dark;
+			color: #000000;
 			text-decoration: none;
-			margin: 0 1rem;
-			font-size: 1.2rem;
+			margin: 0 .5rem;
+			font-size: 1rem;
 		}
 	}
 }
 
 #page_title {
-	color: #D4294F;
+	color: #ffffff;
 	text-align: center;
+  background-color: #3498db;
+  margin: 2rem 35% 2rem 35%;
 	padding: 0.2em;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 }
 
-#main_footer {
-	margin: 3rem;
+#footer {
+	clear: both;
+	padding: 2.5em 5%;
 	border-top: 1px solid $border;
 	.copyright {
 		float: left;
@@ -199,7 +185,6 @@ hr {
 		}
 	}
 }
-
 #round-image {
 	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
