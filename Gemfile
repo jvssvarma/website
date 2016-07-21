@@ -17,8 +17,8 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'aws-sdk', '~> 2.3'
 gem 'paperclip', '~> 5.0.0'
-gem 'fog'
 gem 'figaro'
+gem 'passenger'
 
 
 
@@ -29,4 +29,8 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do
+  gem 'therubyracer'
 end

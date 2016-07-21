@@ -6,19 +6,19 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   host: localhost
-  username: jvssvarma
-  password: Sunny9999
+  username: sunrise
+  password: sunrise123
 
 development:
   <<: *default
-  database: codevarma_development
+  database: codevarma_v1_development
 
 test:
   <<: *default
-  database: codevarma_test
+  database: codevarma_v1_test
 
 production:
   <<: *default
-  database: codevarma_production
+  database: codevarma_v1_production
   username: codevarma
   password: <%= ENV['CODEVARMA_DATABASE_PASSWORD'] %>
