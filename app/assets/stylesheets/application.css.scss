@@ -125,19 +125,31 @@ hr {
 	margin: 2rem 0;
 }
 
+.index_image {
+	text-align: center;
+	img {
+		margin: 0;
+		height: 600px;
+		width: 1000px;
+	}
+}
+
 
 #main_navigation {
 	padding: 1em 5%;
 	.name {
-		font-weight: 700;
+		font-weight: 900;
 		font-size: 1em;
-		letter-spacing: 4px;
+		letter-spacing: 8px;
 		text-transform: uppercase;
-		border: 2px solid $border;
+		border: 2px solid $dark;
 		padding: 1rem;
 		text-decoration: none;
-		color: #e1eef6;
+		color: #34314c;
 		float: left;
+		.light {
+			font-weight: 100;
+		}
 	}
 	nav {
 		float: right;
@@ -149,7 +161,7 @@ hr {
 			color: #000000;
 			text-decoration: none;
 			margin: 0 .5rem;
-			font-size: 1rem;
+			font-size: 1.3rem;
 		}
 	}
 }

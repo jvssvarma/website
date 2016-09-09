@@ -19,6 +19,6 @@ test:
 
 production:
   <<: *default
-  database: codevarma_v1_production
+  database: codevarma_production
   username: codevarma
   password: <%= ENV['CODEVARMA_DATABASE_PASSWORD'] %>

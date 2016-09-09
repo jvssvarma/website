@@ -1,14 +1,18 @@
 <div class="wrapper wrapper_padding clearfix">
 	<div class="about homepage_content">
-		<h2>Welcome!</h2>
-    <h1 wrapper_head>I'm Jampana Varma<br><span class="blue">Coder</span>, <span class="green">Web Devloper</span>,
-      <span class="half_red">Amateur Designer</span> &amp; <span class="orange">Editor</span> from San Jose, CA</b></h1>
+    <h1>Articles on using <span class="half_red">Ruby Gems</span> in <span class="green">Rails Applications</span></h1>
+		<h4>- Read guides on installation of rails &amp; deploying the rails apps.</h4>
+		<h4>- Check out Articles on most commonly used &amp; preffered ruby gems for a Rails beginner.</h4>
+      <h3>Hi! I'm <span class="blue">jvssvarma</span> &amp; thank you for visiting <span class="orange">CodeVarma</span>. Checkout my blogs, articles, projects &amp; guides.</h3>
+	</div>
+	<br>
+	<div class="index_image">
+		<img src="images/fronttest.png"
 	</div>
 	<br>
 	<br>
 	<div class="center col-1 posts_content">
-		<h2>Stuff I want to Share</h2>
-		<hr align="center">
+		<h2>Recent Blogs</h2>
 		<% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>
 			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
@@ -16,8 +20,7 @@
 
 	</div>
 	<div class="center col-1 projects_content">
-		<h2>Stuff I've Written</h2>
-		<hr>
+		<h2>Recent Articles</h2>
 		<% @articles.each do |article| %>
 			<h3><a href="#"><%= link_to article.title, article %></a></h3>
 			<p class="date"><%= article.created_at.strftime("%A, %b %d") %></p>
