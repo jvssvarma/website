@@ -1,0 +1,19 @@
+<h1 id="page_title">Guides on Basic Rails</h1>
+
+<div id="projects">
+	<% @guides.each do |guide| %>
+		<div class="project">
+			<p class="date"><%= guide.created_at.strftime('%A, %B %d') %></p>
+			<div class="project_image">
+				<% if guide.image.present? %>
+					<%= link_to (image_tag guide.image.url(:thumb)), guide %>
+				<% end %>
+			</div>
+			<div class="project_content">
+				<h2><a href="#"><%= link_to guide.title, guide %></a></h2>
+			</div>
+		</div>
+	<% end %>
+</div>
+
+<%= will_paginate @guides %>

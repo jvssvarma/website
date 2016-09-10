@@ -6,7 +6,7 @@
 			<p class="date"><%= article.created_at.strftime('%A, %B %d') %></p>
 			<div class="project_image">
 				<% if article.image.present? %>
-					<%= link_to (image_tag article.image.url(:small)), article %>
+					<%= link_to (image_tag article.image.url(:thumb)), article %>
 				<% end %>
 			</div>
 			<div class="project_content">

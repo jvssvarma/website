@@ -1,0 +1,39 @@
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+	<header>
+		<p class="date"><%= @guide.created_at.strftime('%A, %B %d') %></p>
+		<h1><%= @guide.title %></h1>
+		<hr>
+	</header>
+
+	<div id="content">
+		<p><%= markdown @guide.content %></p>
+	</div>
+	<div>
+		<% if @guide.image.present? %>
+			<%= image_tag @guide.image.url(:medium) %>
+		<% end %>
+	</div>
+	<% if user_signed_in? %>
+	<div id="admin_links">
+		<%= link_to "Edit Guide", edit_guide_path(@guide) %>
+	    <%= link_to "Delete Guide", guide_path(@guide), method: :delete, data: { confirm: "Are you sure?" } %>
+	</div>
+	<% end %>
+
+	<hr>
+
+	<div id="share_box">
+		<p>Share</p>
+		<!-- Twitter -->
+    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @guide.title %> by @jvssvarma - &amp;url=<%= url_for([@guide, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+    <!-- Facebook -->
+    <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@guide, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+    <!-- Google Plus -->
+    <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@guide, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+	</div>
+
+	<hr>
+
+	<%= render 'disqus' %>
+
+</div>
