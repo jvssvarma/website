@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    impressionist(@article)
   end
 
   def new

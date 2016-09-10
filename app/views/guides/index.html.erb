@@ -3,7 +3,7 @@
 <div id="projects">
 	<% @guides.each do |guide| %>
 		<div class="project">
-			<p class="date"><%= guide.created_at.strftime('%A, %B %d') %></p>
+			<p class="date"><%= guide.created_at.strftime('%A, %B %d') %> </p>
 			<div class="project_image">
 				<% if guide.image.present? %>
 					<%= link_to (image_tag guide.image.url(:thumb)), guide %>
