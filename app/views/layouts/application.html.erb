@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CodeVarma | Articles, Blogs, Projects &amp; Guides</title>
+	<title>CodeVarma | Articles on Rails</title>
 	<link rel="icon" href="images/codev2.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -14,10 +14,8 @@
 			<a href="/" class="name"><<span class="light">code</span><span class="blue">varma</span>></a>
 		<nav>
       <a href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a> &ensp;
-			<a href="/posts"><i class="fa fa-clipboard" aria-hidden="true"></i> Blogs</a> &nbsp;
 			<a href="/guides"><i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 1.1rem;"></i></i> Guides</a> &nbsp;
 			<a href="/articles"><i class="fa fa-book" aria-hidden="true"></i> Articles</a> &nbsp;
-      <a href="/projects"><i class="fa fa-desktop" aria-hidden="true"></i> Projects</a> &nbsp;
 			<a href="/contacts/new"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
 			<% if user_signed_in? %>
 			    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>

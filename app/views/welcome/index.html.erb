@@ -12,10 +12,10 @@
 	<br>
 	<br>
 	<div class="center col-1 posts_content">
-		<h2>Recent Blogs</h2>
-		<% @posts.each do |post| %>
-			<h3><a href="#"><%= link_to post.title, post %></a></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+		<h2>Recently added Guides</h2>
+		<% @guides.each do |guide| %>
+			<h3><a href="#"><%= link_to guide.title, guide %></a></h3>
+			<p class="date"><%= guide.created_at.strftime("%A, %b %d") %></p>
 		<% end %>
 
 	</div>
