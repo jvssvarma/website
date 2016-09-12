@@ -8,11 +8,6 @@
 	<div id="content">
 		<p><%= markdown @guide.content %></p>
 	</div>
-	<div>
-		<% if @guide.image.present? %>
-			<%= image_tag @guide.image.url(:medium) %>
-		<% end %>
-	</div>
 	<% if user_signed_in? %>
 	<div id="admin_links">
 		<%= link_to "Edit Guide", edit_guide_path(@guide) %>
