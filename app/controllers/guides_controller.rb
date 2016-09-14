@@ -7,6 +7,7 @@ class GuidesController < ApplicationController
   end
 
   def show
+    impressionist(@guide)
   end
 
   def new
