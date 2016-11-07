@@ -1,4 +1,4 @@
-## What I've used to build this space. [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/jvssvarma/my-tools)
+## Click here to see the stack for this space. [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/jvssvarma/my-tools)
 
 
 ###Planning my application
