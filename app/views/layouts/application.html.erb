@@ -16,7 +16,7 @@
       <a href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a> &ensp;
 			<a href="/guides"><i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 1.1rem;"></i></i> Guides</a> &nbsp;
 			<a href="/articles"><i class="fa fa-book" aria-hidden="true"></i> Articles</a> &nbsp;
-			<a href="/contacts/new"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+			<a href="/contacts/new" class="show_button show_button_wrapper"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
 			<% if user_signed_in? %>
 			    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 			<% end %>

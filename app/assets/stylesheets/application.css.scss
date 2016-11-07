@@ -43,8 +43,14 @@ body {
 }
 
 .skinny_wrapper {
-	width: 80%;
-	max-width: 760px;
+	width: 90%;
+	max-width: 70rem;
+	margin: 0 auto;
+}
+
+.skinny_wrapper_about {
+	width: 100%;
+	max-width: 80rem;
 	margin: 0 auto;
 }
 
@@ -163,6 +169,13 @@ hr {
 			margin: 0 .5rem;
 			font-size: 1.3rem;
 		}
+	}
+	.show_button {
+		color: #fff;
+		&:hover {
+      color: #D30027;
+      background: $white;
+    }
 	}
 }
 
