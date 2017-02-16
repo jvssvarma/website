@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="icon" href="images/codev2.png" type="image/png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<script src="//load.sumome.com/" data-sumo-site-id="9eebc4a74f5639d6a68b5b657981595bc57c921699de3d6ed1e6c06ce6ec8ef3" async="async"></script>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<header id="main_navigation" class="clearfix">
+	<head>
+		<link rel="icon" href="images/codev2.png" type="image/png">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="//load.sumome.com/" data-sumo-site-id="9eebc4a74f5639d6a68b5b657981595bc57c921699de3d6ed1e6c06ce6ec8ef3" async="async"></script>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<header id="main_navigation" class="clearfix">
 			<a href="/" class="name"><<span class="light">code</span><span class="blue">varma</span>></a>
-		<nav>
-      <a href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a> &ensp;
-			<a href="/guides"><i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 1.1rem;"></i></i> Guides</a> &nbsp;
-			<a href="/articles"><i class="fa fa-book" aria-hidden="true"></i> Articles</a> &nbsp;
-			<a href="/contacts/new" class="show_button show_button_wrapper"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
-			<% if user_signed_in? %>
-			    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-			<% end %>
-		</nav>
-	</header>
-	<% if notice %>
-		<p class="notice"><%= notice %></p>
-	<% elsif alert %>
-		<p class="alert"><%= alert %></p>
-	<% end %>
+			<nav>
+				<a href="http://jampanavarma.me" target="_blank"><i class="fa fa-code" aria-hidden="true"></i> Work</a> &nbsp;
+				<a href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a> &ensp;
+				<a href="/guides"><i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 1.1rem;"></i></i> Guides</a> &nbsp;
+				<a href="/articles"><i class="fa fa-book" aria-hidden="true"></i> Articles</a> &nbsp;
+				<a href="/contacts/new" class="show_button show_button_wrapper"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+				<% if user_signed_in? %>
+				    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+				<% end %>
+			</nav>
+		</header>
+		<% if notice %>
+			<p class="notice"><%= notice %></p>
+		<% elsif alert %>
+			<p class="alert"><%= alert %></p>
+		<% end %>
 
-	<%= yield %>
+		<%= yield %>
 
-	<div id="footer">
-		<p class="copyright">&copy;2016 jvssvarma</p>
-		<nav>
-			<a href="http://twitter.com/sunny_santosh" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/santoshcreative" target="_blank"><i class="fa fa-instagram"></i></a>
-			<a href="http://github.com/jvssvarma" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="http://linkedin.com/in/jampanavarma" target="_blank"><i class="fa fa-linkedin"></i></a>
-		</nav>
-	</div>
-</body>
+		<div id="footer">
+			<p class="copyright">&copy;2016 jvssvarma</p>
+			<nav>
+				<a href="http://twitter.com/sunny_santosh" target="_blank"><i class="fa fa-twitter"></i></a>
+	      <a href="https://www.instagram.com/santoshcreative" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="http://github.com/jvssvarma" target="_blank"><i class="fa fa-github"></i></a>
+	      <a href="http://linkedin.com/in/jampanavarma" target="_blank"><i class="fa fa-linkedin"></i></a>
+			</nav>
+		</div>
+	</body>
 </html>

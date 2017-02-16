@@ -22,6 +22,7 @@ gem 'paperclip'
 gem 'figaro'
 gem 'passenger'
 gem 'impressionist'
+gem 'bootstrap-sass'
 
 
 
