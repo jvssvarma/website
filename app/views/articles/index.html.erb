@@ -14,7 +14,7 @@
 				<% end %>
 			</div>
 			<div class="project_content">
-				<h2><a href="#"><%= link_to article.title, article %></a> &nbsp; &nbsp;<i class="fa fa-eye" aria-hidden="true"></i> <%= article.impressionist_count(:filter=>:ip_address)%></h2>
+				<h2><a href="#"><%= link_to article.title, article %></a> &nbsp; &nbsp;<i class="fa fa-eye" aria-hidden="true"></i> <%= article.impressionist_count%></h2>
 			</div>
 		</div>
 	<% end %>
