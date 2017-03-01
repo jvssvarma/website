@@ -1,4 +1,5 @@
-## Click here to see the stack for this space. [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/jvssvarma/my-tools)
+## Click here to see the stack for this space.
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/jvssvarma/codevarma)
 
 
 ###Planning my application
