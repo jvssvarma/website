@@ -23,6 +23,7 @@ gem 'figaro'
 gem 'passenger'
 gem 'impressionist'
 gem 'bootstrap-sass'
+gem 'newrelic_rpm'
 
 
 
