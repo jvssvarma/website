@@ -25,6 +25,7 @@ gem 'passenger'
 gem 'impressionist'
 gem 'bootstrap-sass'
 gem 'newrelic_rpm'
+gem 'rollbar'
 
 
 
