@@ -7,7 +7,6 @@
 <div id="projects">
 	<% @articles.each do |article| %>
 		<div class="project">
-			<p class="date"><%= article.created_at.strftime('%A, %B %d') %></p>
 			<div class="project_image">
 				<% if article.cover.present? %>
 					<%= link_to (image_tag article.cover.url(:thumb)), article %>

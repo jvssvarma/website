@@ -86,6 +86,8 @@ GEM
     i18n (0.8.0)
     impressionist (1.5.2)
       nokogiri (~> 1.6)
+    informant-rails (1.0.0)
+      rails (>= 3.0.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -126,6 +128,7 @@ GEM
       rack
       rake (>= 0.8.1)
     pg (0.19.0)
+    puma (3.7.1)
     pygments.rb (1.1.1)
       multi_json (>= 1.0.0)
     rack (2.0.1)
@@ -221,6 +224,7 @@ DEPENDENCIES
   figaro
   friendly_id
   impressionist
+  informant-rails
   jbuilder
   jquery-rails
   mail_form
@@ -228,6 +232,7 @@ DEPENDENCIES
   paperclip
   passenger
   pg
+  puma
   pygments.rb
   rails (= 5.0.1)
   rails_12factor
@@ -240,9 +245,6 @@ DEPENDENCIES
   uglifier
   web-console (~> 2.0)
   will_paginate
-
-RUBY VERSION
-   ruby 2.3.1p112
 
 BUNDLED WITH
    1.14.6

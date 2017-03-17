@@ -4,6 +4,7 @@ ruby "2.3.1"
 
 gem 'rails', '5.0.1'
 gem 'pg'
+gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
@@ -39,4 +40,5 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'therubyracer'
+  gem 'informant-rails'
 end
