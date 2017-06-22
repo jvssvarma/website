@@ -9,7 +9,7 @@
 	</header>
 
 	<div id="content">
-		<p><%= markdown @article.content %></p>
+		<p><%= @article.content.html_safe %></p>
 	</div>
 	<div>
 		<% if @article.image.present? %>

@@ -26,7 +26,7 @@ gem 'impressionist'
 gem 'bootstrap-sass'
 gem 'newrelic_rpm'
 gem 'rollbar'
-gem 'medium-editor-rails'
+gem "ckeditor"
 
 
 

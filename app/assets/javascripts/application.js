@@ -13,24 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
-//= require medium-editor
-
-<script>
-  var editor = new MediumEditor('.editable', {
-    // options go here
-    allowMultiParagraphSelection: true,
-    buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote'],
-    diffLeft: 0,
-    diffTop: -10,
-    firstButtonClass: 'medium-editor-button-first',
-    lastButtonClass: 'medium-editor-button-last',
-    relativeContainer: null,
-    standardizeSelectionStart: false,
-    static: false,
-    /* options which only apply when static is true */
-    align: 'center',
-    sticky: false,
-    updateOnEmptySelection: false
-  });
-</script>
