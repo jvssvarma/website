@@ -105,6 +105,8 @@ GEM
     mail_form (1.6.0)
       actionmailer (>= 3.2, < 5.1)
       activemodel (>= 3.2, < 5.1)
+    medium-editor-rails (2.3.1)
+      railties (>= 3.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -230,6 +232,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   mail_form
+  medium-editor-rails
   newrelic_rpm
   paperclip
   passenger
