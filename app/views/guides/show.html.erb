@@ -11,6 +11,12 @@
 	<div id="content">
 		<p><%= markdown @guide.content %></p>
 	</div>
+
+	<div>
+		<hr>
+		<p style="text-align: center;"></a><i class="fa fa-eye" aria-hidden="true"></i> <%= @guide.impressionist_count(:filter => :session_hash)%> views </p>
+	</div>
+
 	<% if user_signed_in? %>
 	<div id="admin_links">
 		<%= link_to "Edit Guide", edit_guide_path(@guide) %>
