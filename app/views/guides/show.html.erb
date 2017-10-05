@@ -14,7 +14,7 @@
 
 	<div>
 		<hr>
-		<p style="text-align: center;"></a><i class="fa fa-eye" aria-hidden="true"></i> <%= @guide.impressionist_count(:filter => :session_hash)%> views </p>
+		<p style="text-align: center;"></a><i class="fa fa-eye" aria-hidden="true"></i> <%= @guide.impressionist_count %> views </p>
 	</div>
 
 	<% if user_signed_in? %>

@@ -13,7 +13,7 @@
 	</div>
 	<div>
 		<hr>
-		<p style="text-align: center;"></a><i class="fa fa-eye" aria-hidden="true"></i> <%= @article.impressionist_count(:filter => :session_hash)%> views </p>
+		<p style="text-align: center;"></a><i class="fa fa-eye" aria-hidden="true"></i> <%= @article.impressionist_count %> views </p>
 		<% if @article.image.present? %>
 			<hr>
 			<%= image_tag @article.image.url(:medium) %>
